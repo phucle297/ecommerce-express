@@ -1,13 +1,13 @@
-import { DataSource } from "typeorm";
+import { DataSource } from 'typeorm';
 
 export const dataSource = new DataSource({
-  type: "mysql",
+  type: 'mysql',
   logging: true,
-  database: "ecommerce",
+  database: 'ecommerce',
   port: 3307,
-  host: "localhost",
-  username: "root",
-  password: "",
+  host: 'localhost',
+  username: 'root',
+  password: '',
   synchronize: true,
-  entities: [__dirname + "/../entity/*{.ts,.js}"],
+  entities: [__dirname + '/../entity/*{.ts,.js}'],
 });
