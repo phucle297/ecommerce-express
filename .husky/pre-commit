@@ -1,1 +1,3 @@
-yarn lint 
+npx lint-staged
+yarn circular
+npx validate-branch-name
