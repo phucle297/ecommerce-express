@@ -2,13 +2,13 @@ import { CreateDateColumn, UpdateDateColumn } from 'typeorm';
 
 export class BaseEntity {
   @CreateDateColumn({
-    name: 'dtCreate',
+    name: 'dt_create',
     type: 'datetime',
   })
   createdAt: Date;
 
   @UpdateDateColumn({
-    name: 'dtUpdate',
+    name: 'dt_update',
     type: 'datetime',
   })
   updatedAt: Date;
